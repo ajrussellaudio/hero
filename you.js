@@ -9,7 +9,11 @@ You.prototype = {
   },
   getHeroName: function() {
     return this.hero.name;
+  },
+  takeBreathAway: function( debreathed ) {
+    debreathed.breath = 0;
   }
+
 }
 
 module.exports = You;

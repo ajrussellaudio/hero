@@ -27,7 +27,10 @@ var chorus = function() {
       assert.equal( Infinity, hero.timeToStandByYou )
     });
 
-    it("can have breath taken away by you");
+    it("you can take its breath away", function() {
+      you.takeBreathAway( hero );
+      assert.equal( 0, hero.breath );
+    });
 
   })
 };
