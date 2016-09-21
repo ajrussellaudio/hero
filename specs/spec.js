@@ -8,12 +8,6 @@ var hero = new Hero( "Enrique" );
 var chorus = function() {
   describe( "Hero", function() {
 
-    var you;
-    var hero;
-
-    beforeEach(function() {
-    })
-
     it("can be your hero baby", function() {
       you.setHero( hero );
       assert.equal( "Enrique", you.getHeroName() );
@@ -38,13 +32,25 @@ var chorus = function() {
 
 describe("You", function() {
 
-  it("would dance if I asked you to dance");
+  it("would dance if I asked you to dance", function() {
+    you.dance();
+    assert.equal( "dancing", you.status );
+  });
 
-  it("would run and never look back");
+  it("would run and never look back", function() {
+    you.run();
+    assert( isNaN( you.timeUntilLookBack ) );
+  });
 
-  it("would cry if you saw me crying");
+  it("would cry if you saw me crying", function() {
+    you.see( hero.cry() );
+    assert.equal( "crying", you.status );
+  });
 
-  it("would save my soul tonight");
+  it("would save my soul tonight", function() {
+    you.save( hero.soul );
+    assert( you.thingsToSave.indexOf( hero.soul ) > -1 );
+  });
 
 });
 

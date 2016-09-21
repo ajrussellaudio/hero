@@ -1,6 +1,8 @@
 var You = function( name ) {
   this.name = name;
   this.pain = 100;
+  this.status = "new";
+  this.thingsToSave = [];
 }
 
 You.prototype = {
@@ -12,6 +14,18 @@ You.prototype = {
   },
   takeBreathAway: function( debreathed ) {
     debreathed.breath = 0;
+  },
+  dance: function() {
+    this.status = "dancing";
+  },
+  run: function() {
+    this.timeUntilLookBack = "song" / 0;
+  },
+  see: function( sight ) {
+    this.status = sight;
+  },
+  save: function( thing ) {
+    this.thingsToSave.push( thing );
   }
 
 }
