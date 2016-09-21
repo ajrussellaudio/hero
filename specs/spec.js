@@ -61,11 +61,21 @@ describe("You", function() {
     assert.equal( "trembling", you.getStatus() );
   })
 
-  it("would laugh (oh please tell me this)")
+  it("would laugh (oh please tell me this)", function() {
+    you.laugh();
+    assert.equal( "I am laughing.", you.tellStatus() );
+  });
 
-  it("would die for the one you love")
 
-  it("can hold me in your arms tonight")
+  it("would die for the one you love", function() {
+    you.die( hero );
+    assert.equal( "dead", you.getStatus() )
+  })
+
+  it("can hold me in your arms tonight", function() {
+    you.hold( hero );
+    assert.equal( hero, you.arms.holding[0] );
+  })
 
 })
 
