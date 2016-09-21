@@ -2,6 +2,8 @@
 
 This is a full JavaScript implementation of the song 'Hero' as written by Enrique Iglesias, Paul Barry and Mark Taylor, released in 2001.
 
+Please review the test log below for a full specification.
+
 ## Test Log
 ```
 > mocha specs
