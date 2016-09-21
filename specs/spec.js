@@ -23,7 +23,9 @@ var chorus = function() {
       assert.equal( 0, you.pain );
     });
 
-    it("will stand by you forever");
+    it("will stand by you forever", function() {
+      assert.equal( Infinity, hero.timeToStandByYou )
+    });
 
     it("can have breath taken away by you");
 

@@ -1,5 +1,6 @@
 var Hero = function() {
-  this.name = "Enrique"
+  this.name = "Enrique";
+  this.timeToStandByYou = Infinity;
 }
 
 Hero.prototype = {
