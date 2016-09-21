@@ -10,6 +10,9 @@ Hero.prototype = {
   },
   cry: function() {
     return "crying";
+  },
+  touch: function( thing ) {
+    thing.touched = true;
   }
 }
 

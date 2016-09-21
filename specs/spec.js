@@ -34,7 +34,7 @@ describe("You", function() {
 
   it("would dance if I asked you to dance", function() {
     you.dance();
-    assert.equal( "dancing", you.status );
+    assert.equal( "dancing", you.getStatus() );
   });
 
   it("would run and never look back", function() {
@@ -44,7 +44,7 @@ describe("You", function() {
 
   it("would cry if you saw me crying", function() {
     you.see( hero.cry() );
-    assert.equal( "crying", you.status );
+    assert.equal( "crying", you.getStatus() );
   });
 
   it("would save my soul tonight", function() {
@@ -56,7 +56,10 @@ describe("You", function() {
 
 describe("You", function() {
 
-  it("would tremble if I touched your lips")
+  it("would tremble if I touched your lips", function() {
+    hero.touch( you.lips );
+    assert.equal( "trembling", you.getStatus() );
+  })
 
   it("would laugh (oh please tell me this)")
 
