@@ -13,12 +13,6 @@ You.prototype = {
   getHeroName: function() {
     return this.hero.name;
   },
-  getStatus: function() {
-    if( this.lips.touched ){
-      this.status = "trembling";
-    }
-    return this.status;
-  },
   takeBreathAway: function( debreathed ) {
     debreathed.breath = 0;
   },
@@ -33,7 +27,13 @@ You.prototype = {
   },
   save: function( thing ) {
     this.thingsToSave.push( thing );
-  }
+  },
+  getStatus: function() {
+    if( this.lips.touched ){
+      this.status = "trembling";
+    }
+    return this.status;
+  },
 
 
 }
