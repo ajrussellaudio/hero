@@ -1,0 +1,14 @@
+{
+  "name": "the_real_hero",
+  "version": "1.0.0",
+  "description": "A JavaScript implementation of 'Hero' by Enrique Iglesias",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha specs"
+  },
+  "author": "Alan Russell",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^3.0.2"
+  }
+}
