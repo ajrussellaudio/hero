@@ -24,6 +24,7 @@ You.prototype = {
   },
   run: function() {
     this.timeUntilLookBack = "song" / 0;
+    this.status = "running";
   },
   see: function( sight ) {
     this.status = sight;
@@ -53,6 +54,11 @@ You.prototype = {
   tellStatus: function() {
     var status = this.getStatus();
     var string = ("I am " + status + ".");
+    return string;
+  },
+  tellLie: function() {
+    var status = this.getStatus();
+    var string = ("I am not " + status + ".");
     return string;
   }
 

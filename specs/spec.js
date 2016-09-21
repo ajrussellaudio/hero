@@ -80,3 +80,32 @@ describe("You", function() {
 })
 
 chorus();
+
+describe("You", function() {
+
+  it("would swear that you'll always be mine", function() {
+    assert.equal( hero, you.hero );
+  })
+
+  it("would lie, would run and hide", function() {
+    you.run();
+    assert.equal( "I am running.", you.tellStatus() );
+    assert.equal( "I am not running.", you.tellLie() );
+  });
+
+})
+
+describe("Hero", function() {
+
+  it("is in too deep...");
+
+  it("...has lost mind");
+
+  it("doesn't care...");
+
+  it("...you're here tonight")
+
+})
+
+chorus();
+chorus();
