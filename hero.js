@@ -2,6 +2,7 @@ var Hero = function() {
   this.name = "Enrique";
   this.timeToStandByYou = Infinity;
   this.soul = "my soul";
+  this.fucksGiven = 0;
 }
 
 Hero.prototype = {

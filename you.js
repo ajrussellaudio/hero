@@ -7,6 +7,7 @@ var You = function( name ) {
   this.thingsToSave = [];
   this.lips = { touched: false };
   this.arms = { holding: [] };
+  this.itinerary = {};
 }
 
 You.prototype = {
@@ -60,6 +61,9 @@ You.prototype = {
     var status = this.getStatus();
     var string = ("I am not " + status + ".");
     return string;
+  },
+  setLocationAtTime: function( location, time ) {
+    this.itinerary[time] = location;
   }
 
 

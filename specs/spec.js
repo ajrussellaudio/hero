@@ -97,13 +97,24 @@ describe("You", function() {
 
 describe("Hero", function() {
 
-  it("is in too deep...");
+  it("is in too deep...", function() {
+    var tooDeep = [];
+    tooDeep.push( hero );
+    assert( tooDeep.indexOf( hero ) > -1);
+  });
 
-  it("...has lost mind");
+  it("...has lost mind", function() {
+    assert.equal( undefined, hero.mind );
+  });
 
-  it("doesn't care...");
+  it("doesn't care...", function() {
+    assert.equal( 0, hero.fucksGiven );
+  });
 
-  it("...you're here tonight")
+  it("...you're here tonight", function() {
+    you.setLocationAtTime("here", "tonight");
+    assert.equal( "here", you.itinerary.tonight )
+  })
 
 })
 
