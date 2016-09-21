@@ -1,5 +1,6 @@
 var assert = require( "assert" );
 var Hero = require( "../hero" );
+var You = require( "../you" );
 
 var chorus = function() {
   describe( "Hero", function() {
@@ -8,6 +9,6 @@ var chorus = function() {
     it("will stand by you forever");
     it("can have breath taken away by you")
   })
-}
+};
 
 chorus();
