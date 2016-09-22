@@ -44,7 +44,9 @@ You.prototype = {
   hold: function( thing ) {
     this.arms.holding.push( thing );
   },
-
+  hide: function() {
+    this.status += " and hiding";
+  },
   getStatus: function() {
     if( this.lips.touched ){
       this.status = "trembling";

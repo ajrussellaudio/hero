@@ -89,8 +89,9 @@ describe("You", function() {
 
   it("would lie, would run and hide", function() {
     you.run();
-    assert.equal( "I am running.", you.tellStatus() );
-    assert.equal( "I am not running.", you.tellLie() );
+    you.hide();
+    assert.equal( "I am running and hiding.", you.tellStatus() );
+    assert.equal( "I am not running and hiding.", you.tellLie() );
   });
 
 })
