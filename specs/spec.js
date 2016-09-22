@@ -84,7 +84,7 @@ chorus();
 describe("You", function() {
 
   it("would swear that you'll always be mine", function() {
-    assert.equal( hero, you.hero );
+    assert( Hero.prototype.isPrototypeOf( you.hero ) );
   })
 
   it("would lie, would run and hide", function() {
