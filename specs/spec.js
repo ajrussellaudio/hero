@@ -1,4 +1,5 @@
 var assert = require( "assert" );
+var polyfills = require( "../polyfills/includes" )
 var Hero = require( "../hero" );
 var You = require( "../you" );
 
@@ -101,7 +102,8 @@ describe("Hero", function() {
   it("is in too deep...", function() {
     var tooDeep = [];
     tooDeep.push( hero );
-    assert( tooDeep.indexOf( hero ) > -1);
+    // assert( tooDeep.indexOf( hero ) > -1);
+    assert( tooDeep.includes( hero ) );
   });
 
   it("...has lost mind", function() {

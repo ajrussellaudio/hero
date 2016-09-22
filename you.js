@@ -68,7 +68,6 @@ You.prototype = {
     this.itinerary[time] = location;
   }
 
-
 }
 
 module.exports = You;
