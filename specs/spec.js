@@ -1,5 +1,5 @@
 var assert = require( "assert" );
-var polyfills = require( "../polyfills/includes" )
+var includes = require( "../polyfills/includes" )
 var Hero = require( "../hero" );
 var You = require( "../you" );
 
